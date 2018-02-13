@@ -407,12 +407,23 @@ a {
     min-width: 0;
   }
 
+  .center{
+    min-height: 0;
+  }
+
   .contentElement{
     flex-direction: column-reverse;
+    margin-bottom: 10vh;
   }
+
 
   .workTitle, .workDef{
     width: 100%;
+    margin-bottom: 5vw;
+  }
+
+  .workTitle h2{
+    margin-bottom: 0.6em;
   }
 
   .slider{
@@ -423,21 +434,15 @@ a {
 
 
 
-
-
-
-
-
-
-
-
-
-  .csslider > .navigation {
+  .csslider > .navigation{
     bottom: -8px;
     left: 45%;
-
     margin-bottom: -10px;
+  }
 
+  .csslider > .navigationLeft{
+    right: 0;
+    left: 0;
   }
 
 
