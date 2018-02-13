@@ -54,11 +54,10 @@ header {
   width: 70%;
   margin: auto;
   min-width: 950px;
-  min-height: 1950px;
 }
 
 .contentElement {
-  margin-bottom: 20vh;
+  margin-bottom: 10vh;
 }
 
 .resp {
@@ -66,7 +65,7 @@ header {
   flex-flow: row wrap;
   align-content: space-between;
   justify-content: space-between;
-  margin-bottom: 15vw;
+
 }
 
 .respBlock {
@@ -95,6 +94,10 @@ header {
   font-family: Georgia, Times, "Times New Roman", serif;
 }
 
+.wait {
+  display: none
+}
+
 /*ПОРТФОЛИО*/
 .sliderContentLeftPicture {
   display: flex;
@@ -110,7 +113,7 @@ header {
 
 .slider {
   width: 60%;
-  height: inherit;
+
 }
 
 .workTitle > h2 {
@@ -229,6 +232,14 @@ a {
   display: none;
 }
 
+.csslider > input:nth-of-type(4):checked ~ ul li:first-of-type {
+  margin-left: -300%;
+}
+
+.csslider > input:nth-of-type(3):checked ~ ul li:first-of-type {
+  margin-left: -200%;
+}
+
 .csslider > input:nth-of-type(2):checked ~ ul li:first-of-type {
   margin-left: -100%;
 }
@@ -327,11 +338,6 @@ a {
   opacity: 1;
 }
 
-
-#slider1 {
-  font-family: 'Lato';
-}
-
 @media (max-width: 768px) {
   /*ШАПКА*/
   header {
@@ -401,89 +407,81 @@ a {
 
 }
 
-
-@media (max-width: 336px){
-  .content{
+@media (max-width: 336px) {
+  .content {
     min-width: 0;
   }
 
-  .center{
-    min-height: 0;
-  }
-
-  .contentElement{
+  .contentElement {
     flex-direction: column-reverse;
     margin-bottom: 10vh;
   }
 
-
-  .workTitle, .workDef{
+  .workTitle, .workDef {
     width: 100%;
     margin-bottom: 5vw;
   }
 
-  .workTitle h2{
+  .workTitle h2 {
     margin-bottom: 0.6em;
   }
 
-  .slider{
+  .slider {
     width: 100%;
   }
 
-
-
-
-
-  .csslider > .navigation{
+  .csslider > .navigation {
     bottom: -8px;
     left: 45%;
     margin-bottom: -10px;
   }
 
-  .csslider > .navigationLeft{
+  .csslider > .navigationLeft {
     right: 0;
     left: 0;
   }
 
 
+  .waitBig{
+    display: none;
+  }
+  .wait {
+    height: 100%;
+    display: block;
+  }
 
+  .wait ul {
+    width: 100%;
+  }
 
+  .wait .respBlock {
+    width: 100%;
+    white-space: normal;
+  }
 
+  .wait .navigation {
+    left: 40%;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  .contactsInfo{
+  .contactsInfo {
     flex-direction: column-reverse;
   }
 
-
-  .contactsInfo .invite,.contactsInfo .socials{
+  .contactsInfo .invite, .contactsInfo .socials {
     width: 100%;
     margin-top: 5vw;
   }
 
-  .contactsInfo .socials .fa{
+  .contactsInfo .socials .fa {
     width: 8vw;
   }
 
-  .contactsFormText,.contactsFormArea{
+  .contactsFormText, .contactsFormArea {
     margin-top: 4vw;
     margin-bottom: 4vw;
   }
 
-  .submitButton{
+  .submitButton {
     padding: 1em;
   }
 
